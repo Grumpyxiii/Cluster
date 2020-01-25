@@ -1,0 +1,6 @@
+sudo apt install nfs-common -y
+sudo mkdir /media/sdb
+sudo chown nobody.nogroup /media/sdb
+sudo chmod -R 777 /media/sdb
+
+sudo echo "192.168.14.30:/media/sdb /media/sdb nfs defaults 0 0"
